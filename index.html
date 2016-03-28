@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TODO List Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper-one">
+            <h1>TODO App (Homework Example)</h1>
+            <form method="post" action="" name="main" id="main" class="main">
+                <input type="text" placeholder="Write up Something" id="info" data-warning="Введіть значення" data-repetition="Введене значення вже існує"><span class="warning" id="warning"></span>
+            </form>
+            <button id="button">Add a Task</button>
+        </div>
+        <!-- end wrapper-one -->
+        <div id="wrapper-two">
+            <form method="post" action="" name="popup" id="popup">
+                <div class="editWrapper">
+                    <p class="editHeader">Edit<span class="glyphicon glyphicon-remove" id="editClose" class="editClose"></span></p>
+                </div>
+                <div class="editFieldWrapper">
+                    <ol class="editList">
+                        <li contenteditable id="editField"></li>
+                    </ol>
+                </div>
+                <button id="save">Save Changes</button>
+            </form>
+        </div>
+        <!-- end wrapper-two -->
+    </div>
+    <!-- end container -->
+    <div class="darkenBackground" id="darkenBackground"></div>
+    <!-- end darkenBackground -->
+    <script src="js/script.js"></script>    
+</body>
+
+</html>
