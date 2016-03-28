@@ -20,7 +20,7 @@ window.addEventListener("load", function() {
     button.onclick = function buttonOn() {
 
         if (ol.children.length >= 5) { // Only five tasks are allowed
-            return alert("It's will be enough for today!");
+            return alert("На сьогодні вистарчить!!!");
         }
 
         if (input.value == "") { // Check for empty field
